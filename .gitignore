@@ -1,0 +1,33 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs and DB files
+*.log
+*.db
+*.db-journal
+*.db-wal
+*.sqlite3
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Keep directory structure
+!data/staging/.gitkeep
+!data/quarantine/.gitkeep
+!data/processed/.gitkeep

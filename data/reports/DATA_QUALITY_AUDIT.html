@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Data Quality Audit Report</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f7fafc;
+            color: #2d3748;
+            padding: 40px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 36px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        code {
+            background: #edf2f7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style='color: #1a365d; border-bottom: 2px solid #2b6cb0; padding-bottom: 8px;'>Enterprise Data Quality Audit
+            Report</h1>
+        <p style='line-height: 1.6; color: #4a5568;'>**Generated**: 2026-11-06 14:19:33 | **Dataset**:
+            SOURCE_A_DEMOGRAPHICS</p>
+        <h2 style='color: #2c5282; margin-top: 24px;'>1. Executive Quality Scorecard</h2>
+        <table style='width: 100%; border-collapse: collapse; margin: 16px 0;'>
+            <thead>
+                <tr>
+                    <th style='background-color: #ebf8ff; padding: 10px; border: 1px solid #cbd5e0; text-align: left;'>
+                        Quality Dimension</th>
+                    <th style='background-color: #ebf8ff; padding: 10px; border: 1px solid #cbd5e0; text-align: left;'>
+                        Metric Score</th>
+                    <th style='background-color: #ebf8ff; padding: 10px; border: 1px solid #cbd5e0; text-align: left;'>
+                        Benchmark Target</th>
+                    <th style='background-color: #ebf8ff; padding: 10px; border: 1px solid #cbd5e0; text-align: left;'>
+                        Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>**Composite Quality Index**</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>**99.9% (Grade: A+)**</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>> 90.0%</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>✅ PASSED</td>
+                </tr>
+                <tr>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>**Validity Rate**</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>99.87%</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>> 98.0%</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>✅ PASSED</td>
+                </tr>
+                <tr>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>**Completeness Rate**</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>99.82%</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>> 95.0%</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>✅ PASSED</td>
+                </tr>
+                <tr>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>**Uniqueness Rate**</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>100.0%</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>100.0%</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>✅ PASSED</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 style='color: #2c5282; margin-top: 24px;'>2. Ingestion & Validation Summary</h2>
+        <li style='margin-left: 20px; line-height: 1.6;'>**Total Input Records**: 2,240</li>
+        <li style='margin-left: 20px; line-height: 1.6;'>**Clean Records Accepted**: 2,237 (99.87%)</li>
+        <li style='margin-left: 20px; line-height: 1.6;'>**Quarantined Records**: 3</li>
+        <li style='margin-left: 20px; line-height: 1.6;'>**Income Handling Policy**: `ACCEPT_WITH_NULL`</li>
+        <h3 style='color: #2b6cb0; margin-top: 18px;'>Rule Violation Breakdown</h3>
+        <table style='width: 100%; border-collapse: collapse; margin: 16px 0;'>
+            <thead>
+                <tr>
+                    <th style='background-color: #ebf8ff; padding: 10px; border: 1px solid #cbd5e0; text-align: left;'>
+                        Rule Code</th>
+                    <th style='background-color: #ebf8ff; padding: 10px; border: 1px solid #cbd5e0; text-align: left;'>
+                        Description</th>
+                    <th style='background-color: #ebf8ff; padding: 10px; border: 1px solid #cbd5e0; text-align: left;'>
+                        Violations Detected</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>`MISSING_INCOME`</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>Automated business rule validation</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>0</td>
+                </tr>
+                <tr>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>`INVALID_BIRTH_YEAR`</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>Automated business rule validation</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>3</td>
+                </tr>
+                <tr>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>`INVALID_ID`</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>Automated business rule validation</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>0</td>
+                </tr>
+                <tr>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>`INVALID_DATE`</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>Automated business rule validation</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>0</td>
+                </tr>
+                <tr>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>`NEGATIVE_SPEND`</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>Automated business rule validation</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>0</td>
+                </tr>
+                <tr>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>`NEGATIVE_PURCHASES`</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>Automated business rule validation</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>0</td>
+                </tr>
+                <tr>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>`INVALID_EDUCATION`</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>Automated business rule validation</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>0</td>
+                </tr>
+                <tr>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>`INVALID_MARITAL_STATUS`</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>Automated business rule validation</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>0</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 style='color: #2c5282; margin-top: 24px;'>3. Detected Structural Anomalies</h2>
+        <table style='width: 100%; border-collapse: collapse; margin: 16px 0;'>
+            <thead>
+                <tr>
+                    <th style='background-color: #ebf8ff; padding: 10px; border: 1px solid #cbd5e0; text-align: left;'>
+                        Column</th>
+                    <th style='background-color: #ebf8ff; padding: 10px; border: 1px solid #cbd5e0; text-align: left;'>
+                        Issue Flagged</th>
+                    <th style='background-color: #ebf8ff; padding: 10px; border: 1px solid #cbd5e0; text-align: left;'>
+                        Count</th>
+                    <th style='background-color: #ebf8ff; padding: 10px; border: 1px solid #cbd5e0; text-align: left;'>
+                        Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>`Year_Birth`</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>Unrealistically early birth years (<
+                            1920)</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>3</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>`[1900, 1893, 1899]`</td>
+                </tr>
+                <tr>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>`ID`</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>Customer ID equals 0 (potential sentinel
+                        value or missing surrogate key)</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>1</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>`[0]`</td>
+                </tr>
+                <tr>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>`Income`</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>Missing Income records requiring policy
+                        decision</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>24</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>`[None]`</td>
+                </tr>
+                <tr>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>`Z_CostContact, Z_Revenue`</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>Zero-variance columns (constant values
+                        across all rows, e.g. Z_CostContact, Z_Revenue)</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>2</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>`['Z_CostContact', 'Z_Revenue']`</td>
+                </tr>
+                <tr>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>`Marital_Status`</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>Non-standard or colloquial marital status
+                        values</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>7</td>
+                    <td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>`{'Alone': 3, 'Absurd': 2, 'YOLO': 2}`
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

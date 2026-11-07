@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-Source Reconciliation Report</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f7fafc; color: #2d3748; padding: 40px; margin: 0; }
+        .container { max-width: 1000px; margin: 0 auto; background: white; padding: 36px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+        code { background: #edf2f7; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style='color: #1a365d; border-bottom: 2px solid #2b6cb0; padding-bottom: 8px;'>Enterprise Multi-Source Reconciliation Report</h1>
+<p style='line-height: 1.6; color: #4a5568;'>**Generated**: 2026-11-06 14:19:34 | **Reconciliation Scope**: Source A (Demographics) + Source B (CRM) + Source C (Sales)</p>
+<h2 style='color: #2c5282; margin-top: 24px;'>1. Cross-Source Entity Coverage</h2>
+<table style='width: 100%; border-collapse: collapse; margin: 16px 0;'><thead><tr><th style='background-color: #ebf8ff; padding: 10px; border: 1px solid #cbd5e0; text-align: left;'>Source Metric</th><th style='background-color: #ebf8ff; padding: 10px; border: 1px solid #cbd5e0; text-align: left;'>Count</th><th style='background-color: #ebf8ff; padding: 10px; border: 1px solid #cbd5e0; text-align: left;'>Coverage %</th></tr></thead><tbody>
+<tr><td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>**Total Unified Customers (Golden Master)**</td><td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>**2,290**</td><td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>100.0%</td></tr>
+<tr><td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>**Source A Demographics Records**</td><td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>2,237</td><td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>-</td></tr>
+<tr><td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>**Source B CRM Records**</td><td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>2,050</td><td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>-</td></tr>
+<tr><td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>**Matched Source A & Source B (Full Enrichment)**</td><td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>1,997</td><td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>89.27% of Source A</td></tr>
+<tr><td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>**Customers with Transaction History (Source C)**</td><td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>1,500</td><td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>65.5% of Master</td></tr>
+<tr><td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>**Customers Only in CRM (Unmatched to Source A)**</td><td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>53</td><td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>-</td></tr>
+<tr><td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>**Total Conflicts & Variances Audited**</td><td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>1,168</td><td style='padding: 8px 10px; border: 1px solid #e2e8f0;'>Recorded in DB audit log</td></tr>
+</tbody></table>
+<h2 style='color: #2c5282; margin-top: 24px;'>2. Reconciliation Principles Applied</h2>
+<li style='margin-left: 20px; line-height: 1.6;'>**Entity Matching**: Joined on validated customer identifier (`customer_id`).</li>
+<li style='margin-left: 20px; line-height: 1.6;'>**Contact Information**: Source B (CRM) established as primary authoritative source for email, phone, and name.</li>
+<li style='margin-left: 20px; line-height: 1.6;'>**Demographic Truth**: Source A established as primary authoritative source for birth year, education, income, and family composition.</li>
+<li style='margin-left: 20px; line-height: 1.6;'>**Financial Cross-Check**: Source C transaction sums compared against historical total spend from Source A, flagging significant delta variances.</li>
+    </div>
+</body>
+</html>
